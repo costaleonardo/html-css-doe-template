@@ -1,0 +1,22 @@
+{
+  "name": "doe-template",
+  "version": "1.0.0",
+  "description": "Portfolio template built with HTML5/CSS3.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/costaleonardo/html-css-doe-template.git"
+  },
+  "author": "Leonardo Da Costa <costaleonardo97@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/costaleonardo/html-css-doe-template/issues"
+  },
+  "homepage": "https://github.com/costaleonardo/html-css-doe-template#readme",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
