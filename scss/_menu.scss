@@ -1,4 +1,4 @@
-// Menu button
+// Menu Button
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -11,11 +11,11 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
-  // Rotate into x with menu lines
+  // Rotate Into X With Menu Lines
   &.close {
     transform: rotate(180deg);
 
@@ -24,10 +24,12 @@
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
+
       // Line 2 - Hide
       &:nth-child(2) {
         opacity: 0;
       }
+
       // Line 3 - Rotate
       &:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
@@ -36,7 +38,7 @@
   }
 }
 
-// Menu overlay
+// Menu Overlay
 .menu {
   position: fixed;
   top: 0;
@@ -74,7 +76,7 @@
     }
   }
 
-  // Branding side
+  // Branding Side
   &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
@@ -109,13 +111,13 @@
   }
 
   .nav-link {
-    display: inline;
+    display: inline-block;
     position: relative;
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: $white;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
